@@ -1,0 +1,23 @@
+{
+	"presets": [
+		["@babel/preset-env", {
+			"targets": { "chrome": 65 }
+		}],
+		["@babel/preset-stage-2", {
+      "decoratorsLegacy": true
+    }],
+    ["@babel/preset-react", {
+      "useBuiltIns": true
+    }]
+	],
+
+	"plugins": [
+		"react-hot-loader/babel",
+		"@babel/plugin-proposal-class-properties",
+		"@babel/plugin-proposal-object-rest-spread",
+		["babel-plugin-styled-components", {
+			"displayName": true,
+			"minify": false
+		}]
+	]
+}
