@@ -1,1 +1,1 @@
-webpack config
+React front end webpack

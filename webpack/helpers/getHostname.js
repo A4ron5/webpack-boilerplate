@@ -3,8 +3,8 @@ const argvParser = require('./argvParser');
 const args = argvParser(process.argv);
 
 const getHostname = () => {
-	const host = args.host || '0.0.0.0';
-	const port = args.port || 9000;
+	const host = args.host || 'localhost';
+	const port = args.port || 3000;
 
 	return { host, port };
 };
